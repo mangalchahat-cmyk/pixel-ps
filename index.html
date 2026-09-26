@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelPulse | Image Finder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>pixel-ps</h1>
-    <h1>Chahat</h1>
+  <div class="app-container">
+    <header class="header">
+      <h1>Pixel<span>Pulse</span></h1>
+      <p class="tagline">Search and explore high-resolution public domain images</p>
+    </header>
+
+    <main>
+      <!-- Form with ID matching JS requirements -->
+      <form id="search-form" class="search-form">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search images (e.g. cats, ocean, space)..." 
+          autocomplete="off"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </form>
+
+      <!-- Status/Result Count Container -->
+      <p id="status-message" class="status-message"></p>
+
+      <!-- Results Grid Container -->
+      <section id="results" class="results-grid"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
